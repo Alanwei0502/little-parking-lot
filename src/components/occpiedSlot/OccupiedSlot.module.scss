@@ -1,0 +1,15 @@
+.occupiedSlot{
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  img{
+    width: 60%;
+  }
+
+  .carId{
+    color: rgb(188, 12, 12);
+  }
+}

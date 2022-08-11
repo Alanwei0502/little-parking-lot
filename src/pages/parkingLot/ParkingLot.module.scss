@@ -1,0 +1,26 @@
+.parkinglot{
+  width: 90vw;
+  max-width: 900px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .buttonArea{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    
+    & > button{
+      margin: 0 0.5rem;
+
+      &:first-child{
+        background-color: #f98c3e;
+      }
+
+      &:nth-child(2){
+        background-color: #49de3c;
+      }
+    }
+  }
+}

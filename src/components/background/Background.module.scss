@@ -1,0 +1,29 @@
+.background{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  min-width: 260px;
+  max-width:20rem;
+
+  .road{
+    width: 100%;
+    height: 10vh;
+    border-bottom: .5rem solid #000000;
+    position: relative;
+
+    .streetLight{
+      position: absolute;
+      width: 10vh;
+      left: -3vh;
+    }
+
+    .parkingSign{
+      position: absolute;
+      width: 10vh;
+      right: -2vh;   
+    }
+  }
+}

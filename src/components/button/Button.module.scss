@@ -1,0 +1,22 @@
+.button{
+  border: 0;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-align: center;
+  transition: .3s;
+  border-radius: 1rem;
+}
+
+.active{
+  cursor: pointer;
+  background-color: #f95454;
+  color: #ffffff;
+}
+
+.disabled{
+  cursor:not-allowed;
+  background-color: #989898 !important;
+  color: #d0d0d0;
+}

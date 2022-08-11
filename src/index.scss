@@ -1,0 +1,13 @@
+body{
+  background-color: rgb(131, 225, 242);
+  position: relative;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  #root{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-60%);
+  }
+}
