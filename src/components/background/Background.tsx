@@ -1,6 +1,6 @@
 import React from 'react'
-import streetLight from '../../assets/images/street-light.png'
-import parkingSign from '../../assets/images/parking-sign.png'
+import streetLight from '/assets/images/street-light.png'
+import parkingSign from '/assets/images/parking-sign.png'
 import Car from '../car/Car'
 import styles from './Background.module.scss'
 
