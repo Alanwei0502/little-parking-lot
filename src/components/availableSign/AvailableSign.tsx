@@ -1,16 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AppContext } from '../../context';
 import styles from './AvailableSign.module.scss'
 
-interface Props {
-  availableSlots: number;
-}
+const AvailableSign = () => {
+  const { available } = useContext(AppContext)
 
-const AvailableSign = ({ availableSlots }: Props) => {
   return (
     <>
       <div>Space Available</div>
-      <div className={`${styles.avaiableSign} ${availableSlots === 0 ? styles.isZero : ''}`}>
-        {availableSlots}
+      <div className={`${styles.avaiableSign} ${available === 0 ? styles.isZero : ''}`}>
+        {available}
       </div>
     </>
   )

@@ -1,14 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { AppContext } from '../../context'
 import styles from './Car.module.scss'
 
-interface Props {
-  car: {
-    carId: string
-    carImage: string
-  }
-}
-
-const Car = ({ car }: Props) => {
+const Car = () => {
+  const { car } = useContext(AppContext);
   const { carImage, carId } = car;
   const [carInfo, setCarInfo] = useState(car)
   const [animate, setAnimate] = useState('')

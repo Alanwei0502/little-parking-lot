@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AppContext } from '../../context'
+import { SlotType } from '../../lib/parkingLotClass'
 import styles from './OccupiedSlot.module.scss'
 
 interface Props {
-  car: {
-    carId?: string | undefined
-    carImage?: string | undefined
-  }
+  carInfo: SlotType
 }
 
-const OccupiedSlot = ({ car }: Props) => {
-  const { carId, carImage } = car
+const OccupiedSlot = ({ carInfo }: Props) => {
+  const { onRemoveCar } = useContext(AppContext)
+  const { carId, carImage } = carInfo
+
+  const onClearSlot = () => {
+    onRemoveCar(carId)
+  }
 
   return (
-    <div className={styles.occupiedSlot}>
+    <div className={styles.occupiedSlot} onClick={onClearSlot}>
       <img src={carImage} alt="carImage" />
       <div className={styles.carId}>{carId}</div>
     </div>

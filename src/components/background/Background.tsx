@@ -4,21 +4,13 @@ import parkingSign from '../../assets/images/parking-sign.png'
 import Car from '../car/Car'
 import styles from './Background.module.scss'
 
-interface Props {
-  car: {
-    carId: string
-    carImage: string
-  }
-}
-
-const Background = ({ car }: Props) => {
-
+const Background = () => {
   return (
     <div className={styles.background}>
       <div className={styles.road}>
         <img className={styles.streetLight} src={streetLight} alt='street-light' />
         <img className={styles.parkingSign} src={parkingSign} alt="parkingSign" />
-        <Car car={car} />
+        <Car />
       </div>
     </div>
   )
