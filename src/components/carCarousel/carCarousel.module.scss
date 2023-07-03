@@ -1,0 +1,27 @@
+.slider {
+  margin-top: 5rem;
+  width: calc(90px * 10);
+  max-width: 90vw;
+  overflow: hidden;
+  position: relative;
+
+  .sliderTrack {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    width: calc(90px * 20);
+  }
+
+  .carImage {
+    width: 50px;
+    margin: 0 20px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(calc(-90px * 10));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

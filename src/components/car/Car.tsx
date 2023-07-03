@@ -10,6 +10,7 @@ const Car = () => {
   const carIn = animate === 'in'
   const carOut = animate === 'out'
 
+  // Animation
   useEffect(() => {
     if (animate === '') {
       return setAnimate('in')
@@ -20,6 +21,18 @@ const Car = () => {
       setAnimate('in')
     }, 500)
   }, [carImage, carId])
+
+  // Car
+  // useEffect(() => {
+  //   if (animate === '') {
+  //     return setAnimate('in')
+  //   }
+  //   setTimeout(() => {
+  //     setCarInfo({ carImage, carId })
+  //     setAnimate('in')
+  //   }, 500)
+  // }, [carImage, carId])
+
 
 
   return (
