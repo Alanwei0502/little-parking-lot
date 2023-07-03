@@ -1,14 +1,14 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  .question{
+  .question {
     font-size: 1.2rem;
   }
 
-  .slotsNumberWarning{
+  .slotsNumberWarning {
     color: #b80303;
     height: 1rem;
   }

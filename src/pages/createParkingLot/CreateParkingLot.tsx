@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import Button from '../../components/button/Button'
 import Welcome from '../../components/welcome/Welcome';
 import Logo from '../../components/logo/Logo';
 import ParkingSizeInput from '../../components/parkingSizeInput/ParkingSizeInput';
 import { AppContext } from '../../context'
+import CarCarousel from '../../components/carCarousel';
 import styles from './CreateParkingLot.module.scss'
 
 const CreateParkingLot = () => {
@@ -24,6 +25,7 @@ const CreateParkingLot = () => {
       <Button onClick={onCreateParkingLot}>
         Create your Parking Lot!
       </Button>
+      <CarCarousel />
     </div>
   )
 }
